@@ -20,6 +20,13 @@ img {
   border-radius:20px;
 }
 
+body {
+  background-color:#060b19;
+  height: 100vh;
+  margin: 0rem;
+  overflow: hidden;
+}
+
 .linkEmbed {
   padding: 10px;
   border-style: solid;
