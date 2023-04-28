@@ -1,14 +1,14 @@
 @keyframes rotate {
   from {
-    rotate: 0deg;
+    rotate:0deg;
   }
 
   50% {
-    scale: 1 1.5;
+    scale:1 1.5;
   }
 
   to {
-    rotate: 360deg;
+    rotate:360deg;
   }
 }
 /* rotates cool sphere */
@@ -22,60 +22,64 @@ img {
 
 body {
   background-color:#060b19;
-  height: 100vh;
-  margin: 0rem;
-  overflow: hidden;
+  height:100vh;
+  margin:0rem;
+  overflow:hidden;
 }
 /* styles the background (body) */
 
 .linkEmbed {
-  padding: 10px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #fffbfc;
-  border-radius: 20px;
-  position: absolute;
-  z-index: 3;
-  background-color: #62bbc160;
+  padding:10px;
+  border:solid 2px #fffbfc90;
+  border-radius:20px;
+  position:absolute;
+  z-index:3;
+  background-color:#62bbc160;
   width: 20%;
   margin: 2%;
   top:50%;
   transform:translate(0,-50%);
+  -webkit-transition:border 0.2s ease-in-out;
+}
+
+.linkEmbed:hover {
+  border:solid 2px #fffbfc;
+  -webkit-transition:border 0.2s ease-in-out;
 }
 /* styles the huge rectangles */
 
 .linkHeader {
-  margin: 0;
-  font-family: verdana;
-  color: white;
-  position: relative;
-  font-size: 200%;
+  margin:0;
+  font-family:verdana;
+  color:#fffbfc;
+  position:relative;
+  font-size:200%;
   text-decoration:none;
   text-align:center;
 }
 /* styles the text in the huge rectangles */
 
 #blob {
-  background-color: white;
-  height: 34vmax;
-  aspect-ratio: 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
-  border-radius: 50%;
-  background: linear-gradient(to right, aquamarine, mediumpurple);
-  animation: rotate 20s infinite;
-  opacity: 0.8;
+  background-color:white;
+  height:34vmax;
+  aspect-ratio:1;
+  position:absolute;
+  left:50%;
+  top:50%;
+  translate:-50% -50%;
+  border-radius:50%;
+  background:linear-gradient(to right, aquamarine, mediumpurple);
+  animation:rotate 20s infinite;
+  opacity:0.8;
 }
 /* makes cool sphere */
 
 #blur {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 2;
-  backdrop-filter: blur(12vmax);
+  height:100%;
+  width:100%;
+  position:absolute;
+  z-index:2;
+  backdrop-filter:blur(12vmax);
 }
 /* blurs cool sphere */
 
