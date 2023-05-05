@@ -40,11 +40,19 @@ body {
   top:50%;
   transform:translate(0,-50%);
   -webkit-transition:border 0.2s ease-in-out;
+  transition: all 100ms;
 }
 
 .linkEmbed:hover {
   border:solid 2px #fffbfc;
   -webkit-transition:border 0.2s ease-in-out;
+  transform:translate(0,-50%) scale(1.1);
+  transition: all 100ms;
+}
+
+#embedParent:has(.linkEmbed:hover)  .linkEmbed:not(:hover) {
+  opacity:0.2;
+
 }
 /* styles the huge rectangles */
 
