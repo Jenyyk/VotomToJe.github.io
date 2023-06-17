@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<title>Jeníkova Matika</title>
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="stylesheet" href="indexStyles.css">
+</head>
+<body>
+  <div class="sidebar" style="overflow:scroll;">
+
+    <a href="../AlesWeb/Main_boy.html">
+    <div class="sidebarContent">
+      <p style="font-size:155%;font-family:verdana;color:white;">Alešova stránka</p>
+      <p>Alešova stránka o jeho nové Videohře s názvem game2.py</p>
+      <img style="width:calc(100% - 20px);margin:10px;" src="assets/pythonIcon.png">
+    </div>
+    </a>
+
+    <a href="">
+    <div class="sidebarContent">
+      <p style="font-size:155%;font-family:verdana;color:white;">Byňova stránka</p>
+      <p>Byňův seznam vzorečků fyzikálních i matematických</p>
+      <img style="width:calc(100% - 20px);margin:10px;border-radius:20px;" src="assets/bynaIcon.png">
+    </div>
+    </a>
+
+    <a href="../TonduvWeb/index.html">
+    <div class="sidebarContent">
+      <p style="font-size:155%;font-family:verdana;color:white;">Tondova stránka</p>
+      <p>Tondův přehled nejlepších týmů a hráčů fotbalu v celém světě</p>
+      <img style="width:calc(100% - 20px);margin:10px;border-radius:20px;" src="assets/tondaIcon.png">
+    </div>
+    </a>
+
+  </div>
+  <div id="main">
+    <div class="bgVid">
+      <video style="position:absolute;top:0;left:240px;border:none;border-radius:50px;" id="bgVid" height="auto" muted autoplay loop>
+        <source src="assets/vid.mp4" type="video/mp4">
+        </video>
+    </div>
+  <h1 id="header" style="position:relative;text-align:center;color:white;font-family:monaco,monospace;font-size:600%;margin:0;">Jeníkova Matika</h1>
+  <div id="rest">
+
+    <div class="mainContent">
+      <h1>MEGA KALKULÁTOR</h1>
+      <input>
+    </div>
+
+    <div class="mainContent">
+    <p>FEEDBACK</p>
+      <input id="feedbackInput">
+      <button onclick="sendMessage()">ODESLAT</button>
+    </div>
+
+  </div>
+  </div>
+  <script src="indexScript.js"></script>
+</body>
+</html>

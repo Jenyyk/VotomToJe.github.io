@@ -1,0 +1,175 @@
+::-webkit-scrollbar {
+  width:5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:white;
+  border-radius:5px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background:#ffffff10;
+  border-radius:5px;
+
+}
+/*sidebar scrolling style*/
+
+a {
+  text-decoration:none;
+}
+
+body {
+  background-color:#060b19;
+}
+
+#header {
+  transform:translate(0,-50%);  /*centers element with header id*/
+  -webkit-text-stroke:2.5px #F79420;
+}
+
+#bgVid {
+  width:calc(100% - 240px);
+  margin:0;
+}
+/*calculates width of background video from the viewport width*/
+
+.bgVid {
+  margin:0px;
+}
+
+.sidebar {
+  height:100%;
+  position:fixed;
+  z-index:1;
+  width:200px;
+  margin:0;
+  left:0;
+  padding:20px;
+}
+/* styles the sidebar itself */
+
+.sidebar p {
+  font-family:"rubik", sans-serif;
+  color:white;
+  font-size:90%
+}
+/* styles text in the sidebar  */
+
+.sidebarContent{
+  padding:7px;
+  background-color:#F7942040;
+  border:2px solid #1B998B80;
+  border-radius:20px;
+  margin-bottom:10px;
+  -webkit-transition:background-color 0.7s ease-in-out, border-color 0.2s ease-in-out;
+}
+/* styles the content of the sidebar */
+
+.sidebarContent:hover {
+  border-color:#1B998B;
+  -webkit-transition:background-color 0.7s ease-in-out, border-color 0.2s ease-in-out;
+}
+/* styles the border of the content on hover */
+
+#main {
+  margin-left:240px;
+}
+/* offsets main fo the website to not intersect with the sidebar */
+
+.mainContent {
+  border:2px solid #1B998B80;
+  border-radius:20px;
+  padding:10px;
+  margin-bottom:30px;
+}
+/* styles the main content of the site */
+
+.mainContent:hover {
+  border: 2px solid #1B998B;
+}
+/* styles the main content of the site on hover */
+
+.mainContent h1 {
+  color:white;
+  font-family:"rubik", sans-serif;
+  font-size:500%;
+  margin:0;
+  padding:10px;
+  background:linear-gradient(
+    -45deg,
+    yellow 0% 3%,
+    white 7% 100%
+    );
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-size:200%;
+  font-weight:normal;
+}
+/* styles the header of the main content */
+
+.mainContent p {
+  color:white;
+  font-family:"rubik", sans-serif;
+  font-size:200%;
+  margin:0;
+  padding:10px;
+  text-align:center;
+}
+
+.mainContent:hover h1 {
+  animation:sheen 3s;
+}
+/* styles the header of the main content on hover */
+
+@keyframes sheen {
+  from {
+    background-position:0% center;
+  }
+
+  to {
+    background-position:-200% center;
+  }
+}
+/* animation fo the header of main content */
+
+.mainContent input {
+  width:80%;
+  height:20px;
+  padding:10px;
+  background-color:#00000090;
+  border:1px solid #ffffff30;
+  border-radius:20px;
+  color:white;
+}
+/* styles all inputs in the main content */
+
+.mainContent input:active {
+    border:1px solid #ffffff90;
+}
+/* styles inputs when typing into them */
+
+.mainContent button {
+  height:40px;
+  background-color:#00000090;
+  border:1px solid #ffffff30;
+  border-radius:20px;
+  color:white;
+  transition:all 50ms;
+}
+/* styles all buttons in the main content */
+
+.mainContent button:hover {
+  border:1px solid #ffffff90;
+  transition:all 50ms
+}
+/* styles buttons on hover */
+
+.mainContent button:active {
+  background-color:#00000090;
+  border:1px solid #ffffff30;
+  color:white;
+  opacity:0.7;
+  transform:scale(0.9);
+  transition:all 50ms
+}
+/* styles buttons while being held down */
