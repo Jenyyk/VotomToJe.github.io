@@ -49,12 +49,16 @@
 
     <div class="mainContent">
     <p>FEEDBACK</p>
-      <input id="feedbackInput">
+      <input onkeydown="if (event.keyCode == 13) { sendMessage(); return false; }" id="feedbackInput">
       <button onclick="sendMessage()">ODESLAT</button>
     </div>
 
   </div>
   </div>
+  <dialog id="feedbackDialog">
+    <h1>SENT</h1>
+    <p>Tvůj feedback byl zaslán</p>
+  </dialog>
   <script src="indexScript.js"></script>
 </body>
 </html>
